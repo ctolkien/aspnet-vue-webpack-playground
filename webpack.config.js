@@ -17,17 +17,14 @@ module.exports =  {
         publicPath: 'dist/'
     },
     resolve: {
-        extensions: ['.js', '.ts', '.vue'],
-        alias: { //this is needed to get template-compiler?
-            'vue': 'vue/dist/vue.common.js',
-        }
+        extensions: ['.vue', '.ts', '.js']
     },
     module: {
         rules: [
             {
                 test: /\.ts$/,
-                exclude: /node_modules|vue\/src/,
-                use: {
+                exclude: /node_modules/,
+                use: { 
                     loader: 'ts-loader',
                     options: {
                     appendTsSuffixTo: [/\.vue$/]
@@ -36,13 +33,14 @@ module.exports =  {
             },
             {
                 test: /\.vue$/,
-                use: {
-                    loader: 'vue-loader',
-                    options: {
-                        esModule: true
-                    }
-                } 
+                use: 'vue-loader'
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "vendor",
+            minChunks: Infinity
+        })
+    ]
 }

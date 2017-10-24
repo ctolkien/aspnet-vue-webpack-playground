@@ -1,5 +1,5 @@
-import AppComponent from './app';
-import Bar from './app';
+import AppComponent from './app.vue';
+import Bar from './app.vue';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -17,5 +17,6 @@ new Vue({
     router: new VueRouter({
         mode: 'history',
         routes: routes
-    })
+    }),
+    render: h => h('router-view')
 })

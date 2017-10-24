@@ -1,18 +1,10 @@
 {
-    "compilerOptions": {
-      "allowSyntheticDefaultImports": false,
-      "experimentalDecorators": true,
-      "module": "es2015",
-      "moduleResolution": "node",
-      "target": "es5",
-      "sourceMap": true,
-      "skipDefaultLibCheck": true,
-      "strict": true,
-      "types": ["webpack-env"]
-    },
-    "exclude": [
-        "bin",
-        "node_modules"
-    ]
-  }
-  
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "strict": true
+  },
+  "include": [ "app/**/*" ]
+}
