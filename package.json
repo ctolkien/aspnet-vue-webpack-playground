@@ -1,0 +1,24 @@
+{
+  "name": "vuefire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/webpack-env": "^1.13.2",
+    "aspnet-webpack": "^2.0.1",
+    "event-source-polyfill": "0.0.11",
+    "ts-loader": "^3.0.5",
+    "typescript": "^2.5.3",
+    "vue": "^2.5.2",
+    "vue-loader": "^13.3.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.2",
+    "webpack": "^3.8.1",
+    "webpack-hot-middleware": "^2.20.0"
+  }
+}
