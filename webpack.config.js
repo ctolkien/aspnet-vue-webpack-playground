@@ -4,7 +4,12 @@ const bundleOutputDir = './wwwroot/dist';
 
 module.exports =  {
     entry: {
-        main: './app/main.ts'
+        main: './app/main.ts',
+        vendor: [
+            'event-source-polyfill',
+            'vue',
+            'vue-router'
+        ]
     },
     output: {
         path: path.resolve(__dirname, bundleOutputDir),

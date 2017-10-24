@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>from vue</h1>
+    <h1>from vue!!!</h1>
     <h2>{{lmao}}</h2>
     <ul>
         <li>
