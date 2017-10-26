@@ -8,8 +8,7 @@ Vue.use(VueRouter);
 
 const routes = [
     { path: '/', component: AppComponent},
-    { path: '/bar', component: Bar},
-    
+    { path: '/bar', component: Bar}
 ]
 
 new Vue({
